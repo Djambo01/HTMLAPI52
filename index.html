@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Геолокация и Хранилища</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+        h1 { text-align: center; }
+        button, input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        #location, #saved-data, #indexedDB-data { margin: 20px 0; padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+    <h1>Геолокация и Хранилища</h1>
+    
+    <!-- Определение местоположения -->
+    <button id="getLocation">Определить местоположение</button>
+    <div id="location">Координаты: -</div>
+
+    <!-- Форма для сохранения данных в LocalStorage -->
+    <textarea id="comment" placeholder="Введите ваш комментарий"></textarea>
+    <button id="saveToLocal">Сохранить в LocalStorage</button>
+    
+    <!-- Вывод сохраненных данных из LocalStorage -->
+    <h2>Сохраненные данные (LocalStorage)</h2>
+    <div id="saved-data"></div>
+
+    <!-- Вывод данных из IndexedDB -->
+    <h2>Сохраненные данные (IndexedDB)</h2>
+    <div id="indexedDB-data"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
